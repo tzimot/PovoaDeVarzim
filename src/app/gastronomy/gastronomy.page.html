@@ -29,7 +29,8 @@
     <ion-card-content>
       <ion-text>
         <p>
-          Um prato típico do norte de Portugal (e muito melhor na Póvoa de Varzim), a Francesinha é um sanduíche recheado com carnes, coberto com queijo e um molho especial à base de tomate e cerveja.
+          Um prato típico do norte de Portugal (e muito melhor na Póvoa de Varzim), a Francesinha é uma sandes recheada com carnes, coberto com queijo e um molho especial à base de tomate e cerveja.
+          Uma das minhas recomendações para comer uma boa francesinha é no restaurante "O Mestre".
         </p>
       </ion-text>
     </ion-card-content>
@@ -45,6 +46,7 @@
         <p>
           As sardinhas assadas são um clássico da culinária poveira, especialmente durante as festas de São João.
           Elas são grelhadas na brasa e servidas com pão, batatas e salada.
+          Infelizmente não tenho recomendações de onde comer, porque odeio sardinhas.
         </p>
       </ion-text>
     </ion-card-content>
@@ -59,6 +61,7 @@
       <ion-text>
         <p>
           O Bacalhau à Brás é preparado com bacalhau desfiado, batatas fritas e ovos, resultando em uma combinação deliciosa.
+          Não sou um grande fã de peixe no geral.
         </p>
       </ion-text>
     </ion-card-content>
@@ -97,11 +100,35 @@
     justify-content: center; 
   }
 
+  /* Estilo para o título da página */
+  .titulo {
+    color: #1e3a5f;
+    font-size: 24px;
+    margin-top: 2px;
+  }
+
   /* Estilo para o conteúdo do ion-content */
   ion-content {
-    --background: #f5f5f5; 
-    position: relative; 
-    z-index: 1; 
-    color: white;
+    --background: url('/assets/images/bg.jpeg') no-repeat center center fixed;
+    --background-size: cover;
+    --opacity: 0.5;
+    position: relative;
+    z-index: 1;
   }
-  </style>
+
+  ion-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  ion-card {
+    background: rgba(255, 255, 255, 0.8); /* Making cards slightly transparent */
+  }
+</style>

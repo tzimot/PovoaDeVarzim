@@ -24,7 +24,7 @@
   <img class="small-card-img" src="assets/images/casino2.jpg" alt="Casino" />
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Casino da Póvoa</ion-card-title> <!-- Título do card -->
+      <ion-card-title>Casino da Póvoa</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-text>
@@ -33,6 +33,9 @@
           oferecendo uma variedade de jogos, entretenimento e restaurantes.
         </p>
       </ion-text>
+      <ion-button expand="block" fill="outline" style="--color: #1e3a5f; --border-width: 2px; --border-color: #1e3a5f" (click)="openSpotDetails('casino')">
+        Mais Informações
+      </ion-button>
     </ion-card-content>
   </ion-card>
 
@@ -48,27 +51,50 @@
            oferece excelentes condições para banhos, caminhadas à beira-mar e momentos de lazer.
         </p>
       </ion-text>
+      <ion-button expand="block" fill="outline" style="--color: #1e3a5f; --border-width: 2px; --border-color: #1e3a5f" (click)="openSpotDetails('praia')">
+        Mais Informações
+      </ion-button>
     </ion-card-content>
   </ion-card>
 
   <img class="small-card-img" src="assets/images/parquedacidade.jpg" alt="Parque da Cidade" />
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Parque da Cidade</ion-card-title> 
+      <ion-card-title>Parque da Cidade</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-text>
         <p>
           Com uma área de cerca de 90 hectares, o parque oferece trilhos pedonais, zonas relvadas, lagos, parques infantis e áreas desportivas.
-           É muito frequentado por famílias, desportistas e quem procura um ambiente tranquilo longe da confusão urbana.
         </p>
       </ion-text>
+      <ion-button expand="block" fill="outline" style="--color: #1e3a5f; --border-width: 2px; --border-color: #1e3a5f" (click)="openSpotDetails('parque')">
+        Mais Informações
+      </ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>
 
 <style>
+  ion-content {
+    --background: url('/assets/images/bg.jpeg') no-repeat center center fixed;
+    --background-size: cover;
+    --opacity: 0.5;
+    position: relative;
+    z-index: 1;
+  }
 
+  ion-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    opacity: 0.3;
+    z-index: -1;
+  }
   .padding-do-texto {
     margin: 200px 20px 0 20px;
   }
@@ -88,7 +114,10 @@
     text-align: center; 
   }
 
-  
+  ion-card {
+    background: rgba(255, 255, 255, 0.8); /* Making cards slightly transparent */
+  }
+
   .small-card-img {
     height: 180px; 
     object-fit: cover;
