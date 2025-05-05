@@ -1,0 +1,7 @@
+{
+  "name": "PovoaDeVarzim",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

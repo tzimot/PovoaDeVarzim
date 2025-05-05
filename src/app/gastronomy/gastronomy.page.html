@@ -1,0 +1,107 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button> <!-- Botão para voltar à página inicial -->
+    </ion-buttons>
+    <ion-title class="titulo">Gastronomia</ion-title> <!-- Título da página -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Card de introdução à gastronomia -->
+  <ion-card>
+    <ion-card-content>
+      <ion-text class="card-customizado">
+        <p class="texto-customizado">
+          A gastronomia da Póvoa de Varzim é rica e diversificada, refletindo a tradição pesqueira da região. 
+          Os pratos típicos são preparados com ingredientes frescos do mar e da terra, oferecendo uma experiência única aos visitantes.
+        </p>
+      </ion-text>
+    </ion-card-content> 
+  </ion-card>
+
+  <!-- Imagem da Francesinha -->
+  <img class="small-card-img" src="assets/images/francesinha.jpg" alt="Francesinha" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Francesinha</ion-card-title> <!-- Título da comida -->
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text>
+        <p>
+          Um prato típico do norte de Portugal (e muito melhor na Póvoa de Varzim), a Francesinha é um sanduíche recheado com carnes, coberto com queijo e um molho especial à base de tomate e cerveja.
+        </p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <img class="small-card-img" src="assets/images/sardinhas.jpg" alt="Sardinhas" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sardinhas Assadas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text>
+        <p>
+          As sardinhas assadas são um clássico da culinária poveira, especialmente durante as festas de São João.
+          Elas são grelhadas na brasa e servidas com pão, batatas e salada.
+        </p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <img class="small-card-img" src="assets/images/bacalhau.jpg" alt="Bacalhau" />
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bacalhau à Brás</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text>
+        <p>
+          O Bacalhau à Brás é preparado com bacalhau desfiado, batatas fritas e ovos, resultando em uma combinação deliciosa.
+        </p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<style>
+  /* Estilo para o conteúdo do card */
+  .padding-do-texto {
+    margin: 200px 20px 0 20px; /* Margens para espaçamento */
+  }
+
+  /* Estilo personalizado para o card de introdução */
+  .card-customizado {
+    height: 90px; /* Altura fixa para o card */
+  }
+
+  /* Estilo para o texto da introdução */
+  .texto-customizado {
+    color: black; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+
+  /* Estilo para centralizar os cabeçalhos */
+  .header-centralizado {
+    text-align: center; /* Centraliza o texto */
+  }
+
+  /* Estilo para as imagens dos pratos */
+  .small-card-img {
+    height: 180px; 
+    object-fit: cover;
+    object-position: center top; 
+    width: 100%; 
+    border-radius: 10px; /* Bordas arredondadas */
+    justify-content: center; 
+  }
+
+  /* Estilo para o conteúdo do ion-content */
+  ion-content {
+    --background: #f5f5f5; 
+    position: relative; 
+    z-index: 1; 
+    color: white;
+  }
+  </style>
