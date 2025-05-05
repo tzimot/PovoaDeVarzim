@@ -5,7 +5,6 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <!-- Card para Pontos Turísticos -->
   <ion-card button (click)="goToTouristPoints()">
     <ion-img class="small-card-img" src="assets/images/casino.jpg"></ion-img>
     <ion-card-header>
@@ -16,7 +15,6 @@
     </ion-card-content>
   </ion-card>
 
-  <!-- Card para Gastronomia -->
   <ion-card button (click)="goToGastronomy()">
     <ion-img class="small-card-img" src="assets/images/barquinhos.jpg"></ion-img>
     <ion-card-header>
@@ -27,7 +25,6 @@
     </ion-card-content>
   </ion-card>
   
-  <!-- Card para Informação Útil -->
   <ion-card button (click)="goToUsefulInfo()">
     <ion-card-header>
       <ion-card-title class="headerdisto">Informação Útil</ion-card-title>
@@ -37,7 +34,6 @@
     </ion-card-content>
   </ion-card>
 
-  <!-- Card para Informações Gerais -->
   <ion-card button (click)="goToGeneralData()">
     <ion-card-header>
       <ion-card-title class="headerdisto">Informações Gerais</ion-card-title>
@@ -51,7 +47,6 @@
 <div class="watermark">Aplicação desenvolvida por Timóteo Gres para a UC de IHM do curso de ECGM da ESTG do IPVC</div>
 
 <style>
-  /* Estilo para as imagens dos cartões */
   .small-card-img {
     height: 120px;
     object-fit: cover;
@@ -59,7 +54,6 @@
     width: 100%;
   }
 
-  /* Estilo para o conteúdo do ion-content */
   ion-content {
     --background: url('/assets/images/bg.jpeg') no-repeat center center fixed;
     --background-size: cover;
@@ -80,7 +74,6 @@
     z-index: -1;
   }
 
-  /* Estilo para os cards */
   ion-card {
     --background: rgba(255, 255, 255, 0.7) !important;
     backdrop-filter: blur(10px);
@@ -96,27 +89,23 @@
     background: transparent;
   }
 
-  /* Estilo para os títulos dos cards */
   .headerdisto {
     color: #005b8c;
     text-align: center;
   }
 
-  /* Estilo para o texto dos cards */
   .contentdisto {
     color: #333333;
     text-align: center;
   }
 
-  /* Estilo para o título da página */
   .titulo {
-    color: #1e3a5f; /* Cor do título da página */
-    font-size: 24px; /* Tamanho da fonte do título */
-    text-align: center; /* Centraliza o título */
-    margin-top: 2px; /* Margem superior para dar espaço */
+    color: #1e3a5f;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 2px;
   }
 
-  /* Estilo para a marca d'água */
   .watermark {
     position: fixed;
     bottom: 0;
@@ -132,8 +121,7 @@
     border-top: 1px solid #eee;
   }
   
-  /* Estilo para os cards */
   ion-card {
-    background: rgba(255, 255, 255, 0.8); /* Making cards slightly transparent */
+    background: rgba(255, 255, 255, 0.8);
   }
 </style>
