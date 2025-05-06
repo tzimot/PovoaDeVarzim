@@ -3,12 +3,11 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title class="titulo">Pontos Turísticos</ion-title>
+    <ion-title class="titulo2">Pontos Turísticos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- Card de introdução aos pontos turísticos -->
   <ion-card>
     <ion-card-content>
       <ion-text class="card-customizado">
@@ -20,15 +19,14 @@
     </ion-card-content> 
   </ion-card>
 
-  <!-- Imagem do Casino da Póvoa -->
   <img class="small-card-img" src="assets/images/casino2.jpg" alt="Casino" />
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Casino da Póvoa</ion-card-title>
+      <ion-card-title class="titulo">Casino da Póvoa</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-text>
-        <p>
+        <p class="texto-customizado">
           Um dos principais pontos turísticos da cidade, 
           oferecendo uma variedade de jogos, entretenimento e restaurantes.
         </p>
@@ -42,11 +40,11 @@
   <img class="small-card-img" src="assets/images/praia.jpg" alt="Praia da Póvoa de Varzim" />
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Praia da Póvoa de Varzim</ion-card-title>
+      <ion-card-title class="titulo">Praia da Póvoa de Varzim</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-text>
-        <p>
+        <p class="texto-customizado">
           Com um extenso areal dourado e águas do Atlântico,
            oferece excelentes condições para banhos, caminhadas à beira-mar e momentos de lazer.
         </p>
@@ -60,11 +58,11 @@
   <img class="small-card-img" src="assets/images/parquedacidade.jpg" alt="Parque da Cidade" />
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Parque da Cidade</ion-card-title>
+      <ion-card-title class="titulo">Parque da Cidade</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-text>
-        <p>
+        <p class="texto-customizado">
           Com uma área de cerca de 90 hectares, o parque oferece trilhos pedonais, zonas relvadas, lagos, parques infantis e áreas desportivas.
         </p>
       </ion-text>
@@ -76,8 +74,15 @@
 </ion-content>
 
 <style>
+  .small-card-img {
+    height: 120px;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+  }
+
   ion-content {
-    --background: url('/assets/images/bg.jpeg') no-repeat center center fixed;
+    --background: url('/assets/images/bg2.jpeg') no-repeat center center fixed;
     --background-size: cover;
     --opacity: 0.5;
     position: relative;
@@ -95,6 +100,58 @@
     opacity: 0.3;
     z-index: -1;
   }
+
+  ion-card {
+    --background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 16px;
+  }
+
+  ion-card-header {
+    background: transparent;
+  }
+
+  ion-card-content {
+    background: transparent;
+  }
+
+  .headerdisto {
+    color: #005b8c;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .contentdisto {
+    color: #333333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .titulo {
+    color: #1e3a5f;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .card-customizado {
+    height: 90px;
+  }
+
+  .texto-customizado {
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
   .padding-do-texto {
     margin: 200px 20px 0 20px;
   }
@@ -115,7 +172,7 @@
   }
 
   ion-card {
-    background: rgba(255, 255, 255, 0.8); /* Making cards slightly transparent */
+    background: rgba(255, 255, 255, 0.8);
   }
 
   .small-card-img {
@@ -133,4 +190,18 @@
     font-size: 24px; 
     margin-top: 2px;
   }
+
+  .texto-customizado {
+    color: black;
+    font-size: 16px;
+  }
+
+  .titulo2 {
+      color: #1e3a5f;
+      font-size: 24px;
+      margin-top: 2px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
 </style>

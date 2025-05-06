@@ -12,19 +12,19 @@
     <ion-card-content>
       <ion-list class="lista-custom">
         <ion-item>
-          <ion-label>- A Póvoa de Varzim tem o começo da linha B do Metro do Porto, o que torna o acesso ao Porto mais barato e fácil.</ion-label>
+          <ion-label class="texto-customizado">- A Póvoa de Varzim tem o começo da linha B do Metro do Porto, o que torna o acesso ao Porto mais barato e fácil.</ion-label>
         </ion-item>
   
         <ion-item>
-          <ion-label>- A Póvoa tem raízes antigas, com forte ligação ao mar desde o século XI. A comunidade piscatória moldou grande parte da identidade local.</ion-label>
+          <ion-label class="texto-customizado">- A Póvoa tem raízes antigas, com forte ligação ao mar desde o século XI. A comunidade piscatória moldou grande parte da identidade local.</ion-label>
         </ion-item>
   
         <ion-item>
-          <ion-label>- A cidade é atravessada por uma rota histórica de peregrinação, sendo ponto de passagem para muitos peregrinos rumo a Santiago de Compostela.</ion-label>
+          <ion-label class="texto-customizado">- A cidade é atravessada por uma rota histórica de peregrinação, sendo ponto de passagem para muitos peregrinos rumo a Santiago de Compostela.</ion-label>
         </ion-item>
   
         <ion-item lines="none">
-          <ion-label>- Para mim, a bandeira da Póvoa de Varzim é a mais gira. Aqui está ela:</ion-label>
+          <ion-label class="texto-customizado">- Para mim, a bandeira da Póvoa de Varzim é a mais gira. Aqui está ela:</ion-label>
         </ion-item>
       </ion-list>
     </ion-card-content>
@@ -34,17 +34,18 @@
 </ion-content>
 
 <style>
-  /* Estilo para o título da página */
   .titulo {
     color: #1e3a5f;
     font-size: 24px;
     margin-top: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
 
-  /* Estilo para o conteúdo do ion-content */
   ion-content {
-    --background: url('/assets/images/bg.jpeg') no-repeat center center fixed;
-    background-size: cover;
+    --background: url('/assets/images/bg2.jpeg') no-repeat center center fixed;
+    --background-size: cover;
     color: #333;
     position: relative;
   }
@@ -61,24 +62,23 @@
     z-index: -1;
   }
 
-  /* Estilo para o card */
   ion-card {
     margin: 16px;
-    background: rgba(255, 255, 255, 0.8); /* Making cards slightly transparent */
+    background: rgba(255, 255, 255, 0.8);
     position: relative;
     z-index: 1;
   }
 
   ion-card-content {
-    background: transparent; /* Make the content transparent */
+    background: transparent;
   }
 
   ion-list {
-    background: transparent; /* Make the list transparent */
+    background: transparent;
   }
 
   ion-item {
-    --background: transparent; /* Make each item transparent */
+    --background: transparent;
     --padding-top: 4px;
     --padding-bottom: 4px;
     margin-top: 0;
@@ -122,5 +122,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .texto-customizado {
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
   }
 </style>
